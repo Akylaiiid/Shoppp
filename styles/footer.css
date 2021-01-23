@@ -1,0 +1,139 @@
+.footer__bg-img{
+    background-color: #212121;
+}
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    padding:73px 0;
+    align-items: center;
+
+}
+
+.col-4{
+    width: 33.333333333333%;
+}
+.col-8{
+    width: 66.66%;
+} 
+
+.footer__description{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 30px;
+    padding-right: 30px;
+    width: 70%;
+}
+.footer__rigth{
+    display: flex;
+    align-items: flex-start;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    list-style: none;
+
+}
+.menu__title{
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.menu__link{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 22px;
+    text-align: left;
+    color:#CBCFD4;
+    transition: 0.2s;
+}
+
+.social-icon{
+    width: 15px;
+    height: 15px;
+    fill:white;
+    margin-right: 10px;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.footer__item{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.footer .menu__link:hover{
+    color:white;
+    font-weight: 300;
+}
+.menu__display--max-width576{
+    display: none;
+}
+
+/*MEDIA
+==========================================*/
+@media screen and (max-width:1024px){
+    .footer__row{
+        flex-direction: column;
+    }
+    .col-4{
+        width: 100%;
+    }
+
+    .col-8{
+        width: 100%;
+    }
+    .footer__left{
+        text-align: center;
+    }
+    .footer__description{
+        text-align: center;
+        margin: 25px 0;
+        font-size: 12px;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .footer__menu{
+        display: none;
+    }
+    .menu__display--max-width576{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu__display--max-width576 .menu__item{
+        padding-right: 50px;
+    }
+    .menu__display--max-width576 .menu__item:nth-child(3){
+        padding-right: 0;
+    }
+  
+    .footer__item{
+        font-size: 12px;
+    }
+    .footer__item:nth-last-child(1){
+        text-align: right;
+    }
+}
