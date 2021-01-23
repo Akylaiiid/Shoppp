@@ -1,0 +1,17 @@
+.new {
+    text-align: center;
+    padding: 150px 0 103px;
+}
+
+.new__title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #212121;
+}
+
+.new__wrapper {
+    margin: 103px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
